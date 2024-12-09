@@ -85,6 +85,7 @@ summary_df = off_target_mutations_df.groupby('CHROM')['POS'].agg(['count', 'nuni
 summary_df.columns = ['Mutation Count', 'Genotype Count']
 summary_df
 
+#generate a chart to visualize the data
 import matplotlib.pyplot as plt
 
 plt.hist(off_target_mutations_df['POS'], bins=50)
