@@ -8,10 +8,8 @@ RUN apt-get install -y bcftools
 RUN apt-get install -y seqtk
 
 # Convenience commands
-ADD align.py /usr/local/bin/align.py
-RUN chmod +x /usr/local/bin/align.py
-RUN ln -s /usr/local/bin/align.py /usr/local/bin/align
-CMD ["/usr/local/bin/align"]
+ADD ../Scripts/Project_CRISPR copy 2.ipynb Project_CRISPR copy 2.ipynb
+RUN chmod +x Project_CRISPR copy 2.ipynb
 
 # Integration tests
 ADD test /tmp/test
